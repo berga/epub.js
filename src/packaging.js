@@ -123,12 +123,14 @@ class Packaging {
 			var id = item.getAttribute("id"),
 					href = item.getAttribute("href") || "",
 					type = item.getAttribute("media-type") || "",
+					overlay = item.getAttribute("media-overlay") || "",
 					properties = item.getAttribute("properties") || "";
 
 			manifest[id] = {
 				"href" : href,
 				// "url" : href,
 				"type" : type,
+				"overlay" : overlay,
 				"properties" : properties.length ? properties.split(" ") : []
 			};
 
