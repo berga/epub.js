@@ -99,6 +99,7 @@ class Packaging {
 		metadata.orientation = this.getPropertyText(xml, "rendition:orientation");
 		metadata.flow = this.getPropertyText(xml, "rendition:flow");
 		metadata.viewport = this.getPropertyText(xml, "rendition:viewport");
+		metadata.media_active_class = this.getPropertyText(xml, "media:active-class");
 		// metadata.page_prog_dir = packageXml.querySelector("spine").getAttribute("page-progression-direction");
 
 		return metadata;
